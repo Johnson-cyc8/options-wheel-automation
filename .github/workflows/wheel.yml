@@ -16,9 +16,9 @@ jobs:
 
     env:
       ALPACA_API_KEY:   ${{ secrets.ALPACA_API_KEY }}
-      ALPACA_SECRET_KEY:${{ secrets.ALPACA_SECRET_KEY }}
-      IS_PAPER:         true
-      GOOGLE_SCRIPT_URL:${{ secrets.GOOGLE_SCRIPT_URL }}
+      ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+      IS_PAPER: true
+      GOOGLE_SCRIPT_URL: ${{ secrets.GOOGLE_SCRIPT_URL }}
 
     steps:
       - name: Checkout code
