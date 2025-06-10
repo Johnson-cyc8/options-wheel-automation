@@ -3,7 +3,7 @@ from .strategy import filter_underlying, filter_options, score_options, select_o
 from .logger import log_trades  # JSON logging helper
 from models.contract import Contract
 import numpy as np
-from datetime import datetime  # for timestamps
+from datetime import datetime, date
 from alpaca.common.exceptions import APIError
 
 logger = logging.getLogger(f"strategy.{__name__}")
@@ -58,12 +58,19 @@ def sell_puts(client, allowed_symbols, buying_power, strat_logger=None):
                     else:
                         raise
 
+                # Format expiration date as string
+                exp_val = getattr(p, 'expiration_date', None)
+                if isinstance(exp_val, date):
+                    exp_str = exp_val.strftime('%Y-%m-%d')
+                else:
+                    exp_str = str(exp_val) if exp_val else ''
+
                 trade = {
                     "timestamp": datetime.utcnow().isoformat() + "Z",
                     "ticker": p.underlying,
                     "type": "PUT",
                     "strike": p.strike,
-                    "expiration": getattr(p, 'expiration_date', None),
+                    "expiration": exp_str,
                     "premium": p.bid_price * 100,
                     "action": "SELL_TO_OPEN",
                     "status": getattr(order, 'status', 'UNKNOWN')
@@ -117,12 +124,19 @@ def sell_calls(client, symbol, purchase_price, stock_qty, strat_logger=None):
                     raise
                 return
 
+            # Format expiration date as string
+            exp_val = getattr(contract, 'expiration_date', None)
+            if isinstance(exp_val, date):
+                exp_str = exp_val.strftime('%Y-%m-%d')
+            else:
+                exp_str = str(exp_val) if exp_val else ''
+
             trade = {
                 "timestamp": datetime.utcnow().isoformat() + "Z",
                 "ticker": contract.underlying,
                 "type": "CALL",
                 "strike": contract.strike,
-                "expiration": getattr(contract, 'expiration_date', None),
+                "expiration": exp_str,
                 "premium": contract.bid_price * 100,
                 "action": "SELL_TO_OPEN",
                 "status": getattr(order, 'status', 'UNKNOWN')
