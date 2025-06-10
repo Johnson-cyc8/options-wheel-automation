@@ -26,15 +26,19 @@ def main():
     client = BrokerClient(api_key=ALPACA_API_KEY, secret_key=ALPACA_SECRET_KEY, paper=IS_PAPER)
 
     # Fetch your actual cash balance (not margin buying power)
+    # Fetch your Alpaca account details
     account = client.trade_client.get_account()
+    # Cash balance and options buying power
     cash_balance = float(account.cash)
-    logger.info(f"[Current cash balance is ${cash_balance}]")
+    options_bp = float(getattr(account, 'options_buying_power', 0))
+    logger.info(f"[Cash balance: ${cash_balance}, Options buying power: ${options_bp}]")
 
     if args.fresh_start:
         logger.info("Running in fresh start mode — liquidating all positions.")
         client.liquidate_all_positions()
         allowed_symbols = SYMBOLS
-        buying_power = cash_balance
+        # On fresh start, limit by both cash and options buying power
+        buying_power = min(cash_balance, options_bp)
     else:
         # Track existing positions
         positions = client.get_positions()
@@ -53,7 +57,8 @@ def main():
 
         # Determine which symbols are available for new puts
         allowed_symbols = list(set(SYMBOLS) - set(states.keys()))
-        buying_power = cash_balance - current_risk
+        # Limit by free cash after risk and by options buying power
+        buying_power = min(cash_balance - current_risk, options_bp)
 
     strat_logger.set_buying_power(buying_power)
     strat_logger.set_allowed_symbols(allowed_symbols)
