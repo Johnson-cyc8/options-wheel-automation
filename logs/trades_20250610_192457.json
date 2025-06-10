@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp": "2025-06-10T19:24:57.734082Z",
+    "ticker": "MP",
+    "type": "PUT",
+    "strike": 25.0,
+    "expiration": "2025-06-20",
+    "premium": 56.99999999999999,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-06-10T19:24:57.760527Z",
+    "ticker": "PLTR",
+    "type": "PUT",
+    "strike": 129.0,
+    "expiration": "2025-06-13",
+    "premium": 133.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-06-10T19:24:57.785964Z",
+    "ticker": "AAL",
+    "type": "PUT",
+    "strike": 11.5,
+    "expiration": "2025-06-13",
+    "premium": 9.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-06-10T19:24:57.813311Z",
+    "ticker": "INTC",
+    "type": "PUT",
+    "strike": 21.5,
+    "expiration": "2025-06-13",
+    "premium": 16.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-06-10T19:24:57.841253Z",
+    "ticker": "NVDA",
+    "type": "PUT",
+    "strike": 141.0,
+    "expiration": "2025-06-13",
+    "premium": 91.9,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
