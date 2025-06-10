@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2025-06-10T19:12:37.970604Z",
+    "ticker": "MP",
+    "type": "PUT",
+    "strike": 25.0,
+    "expiration": "2025-06-20",
+    "premium": 62.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-06-10T19:12:37.986093Z",
+    "ticker": "INTC",
+    "type": "PUT",
+    "strike": 21.5,
+    "expiration": "2025-06-13",
+    "premium": 22.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
