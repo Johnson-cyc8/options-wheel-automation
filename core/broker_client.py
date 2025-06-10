@@ -10,11 +10,14 @@ from datetime import timedelta
 from zoneinfo import ZoneInfo
 import datetime
 
+
 class TradingClientSigned(UserAgentMixin, TradingClient):
     pass
 
+
 class StockHistoricalDataClientSigned(UserAgentMixin, StockHistoricalDataClient):
     pass
+
 
 class OptionHistoricalDataClientSigned(UserAgentMixin, OptionHistoricalDataClient):
     pass
@@ -30,10 +33,13 @@ class BrokerClient:
         return self.trade_client.get_all_positions()
 
     def market_sell(self, symbol, qty=1):
+        """
+        Place a market sell order for the given symbol and return the Order object.
+        """
         req = MarketOrderRequest(
             symbol=symbol, qty=qty, side='sell', type='market', time_in_force='day'
         )
-        self.trade_client.submit_order(req)
+        return self.trade_client.submit_order(req)
 
     def get_option_snapshot(self, symbol):
         if isinstance(symbol, str):
@@ -47,12 +53,9 @@ class BrokerClient:
                 req = OptionSnapshotRequest(symbol_or_symbols=batch)
                 result = self.option_client.get_option_snapshot(req)
                 all_results.update(result)
-            
             return all_results
-
-
         else:
-            raise ValueError("Input must be a string or list of strings representing symbols.")
+            raise ValueError("Symbol must be a string or list of symbols.")
 
     def get_stock_latest_trade(self, symbol):
         req = StockLatestTradeRequest(symbol_or_symbols=symbol)
@@ -61,38 +64,32 @@ class BrokerClient:
     def get_options_contracts(self, underlying_symbols, contract_type=None):
         timezone = ZoneInfo("America/New_York")
         today = datetime.datetime.now(timezone).date()
-        # Set the expiration date range for the options
         min_expiration = today + timedelta(days=EXPIRATION_MIN)
         max_expiration = today + timedelta(days=EXPIRATION_MAX)
 
         contract_type = {'put': ContractType.PUT, 'call': ContractType.CALL}.get(contract_type, None)
 
-        # Set up the initial request
         req = GetOptionContractsRequest(
             underlying_symbols=underlying_symbols,
             status=AssetStatus.ACTIVE,
             expiration_date_gte=min_expiration,
             expiration_date_lte=max_expiration,
             type=contract_type,
-            limit=1000,  
+            limit=1000,
         )
 
         all_contracts = []
         page_token = None
-
         while True:
             if page_token:
                 req.page_token = page_token
-
             response = self.trade_client.get_option_contracts(req)
             all_contracts.extend(response.option_contracts)
-
-            page_token = getattr(response, "next_page_token", None)
+            page_token = getattr(response, 'next_page_token', None)
             if not page_token:
                 break
-
         return all_contracts
-    
+
     def liquidate_all_positions(self):
         positions = self.get_positions()
         to_liquidate = []
@@ -103,5 +100,3 @@ class BrokerClient:
                 to_liquidate.append(p)
         for p in to_liquidate:
             self.trade_client.close_position(p.symbol)
-
-
