@@ -4,7 +4,7 @@ on:
   schedule:
     # 10:00 AM ET → 14:00 UTC
     - cron: '0 14 * * 1-5'
-    # 1:00 PM ET  → 17:00 UTC
+    # 1:00 PM ET → 17:00 UTC
     - cron: '0 17 * * 1-5'
     # 3:30 PM ET → 19:30 UTC
     - cron: '30 19 * * 1-5'
@@ -13,11 +13,34 @@ on:
 jobs:
   wheel:
     runs-on: ubuntu-latest
-    # … your env, setup steps …
+
+    env:
+      ALPACA_API_KEY:   ${{ secrets.ALPACA_API_KEY }}
+      ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+      IS_PAPER:         true
+      GOOGLE_SCRIPT_URL: ${{ secrets.GOOGLE_SCRIPT_URL }}
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/pyproject.toml','**/setup.py') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -e .
 
       - name: Record last log filename
         id: before
