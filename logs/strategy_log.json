@@ -3694,5 +3694,87 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2025-06-10T15:36:38.166878-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_option",
+        "symbol": "AAL250613P00011500",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.07",
+        "current_price": "0.08",
+        "pnl": "-1"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "INTC250613P00021500",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.18",
+        "current_price": "0.23",
+        "pnl": "-5"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "MP250620P00025000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.55",
+        "current_price": "0.55",
+        "pnl": "0"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "NVDA250613P00141000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.9",
+        "current_price": "0.98",
+        "pnl": "-8"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "PLTR250613P00129000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "1.31",
+        "current_price": "1.35",
+        "pnl": "-4"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "short_put",
+        "price": null
+      },
+      "INTC": {
+        "type": "short_put",
+        "price": null
+      },
+      "MP": {
+        "type": "short_put",
+        "price": null
+      },
+      "NVDA": {
+        "type": "short_put",
+        "price": null
+      },
+      "PLTR": {
+        "type": "short_put",
+        "price": null
+      }
+    },
+    "buying_power": 2500.9,
+    "allowed_symbols": [
+      "DLR",
+      "QQQ",
+      "CAT",
+      "V",
+      "AAPL"
+    ],
+    "filtered_symbols": []
   }
 ]
