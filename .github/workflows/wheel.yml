@@ -43,7 +43,7 @@ jobs:
         run: pip install -e .
 
       - name: Run strategy
-        run: run-strategy --strat-log --log-level INFO  # run: run-strategy --strat-log --log-level INFO --fresh-start
+        run: run-strategy --strat-log --log-level INFO --fresh-start
 
       - name: Send trades to Google Sheets
         if: env.GOOGLE_SCRIPT_URL != ''
