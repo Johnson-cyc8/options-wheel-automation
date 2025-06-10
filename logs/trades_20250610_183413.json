@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2025-06-10T18:34:13.279478Z",
+    "ticker": "MP",
+    "type": "PUT",
+    "strike": 25.0,
+    "expiration": null,
+    "premium": 52.0,
+    "action": "SELL_TO_OPEN",
+    "status": "UNKNOWN"
+  },
+  {
+    "timestamp": "2025-06-10T18:34:13.294163Z",
+    "ticker": "PLTR",
+    "type": "PUT",
+    "strike": 128.0,
+    "expiration": null,
+    "premium": 131.0,
+    "action": "SELL_TO_OPEN",
+    "status": "UNKNOWN"
+  },
+  {
+    "timestamp": "2025-06-10T18:34:13.310186Z",
+    "ticker": "INTC",
+    "type": "PUT",
+    "strike": 21.0,
+    "expiration": null,
+    "premium": 44.0,
+    "action": "SELL_TO_OPEN",
+    "status": "UNKNOWN"
+  },
+  {
+    "timestamp": "2025-06-10T18:34:13.325344Z",
+    "ticker": "NVDA",
+    "type": "PUT",
+    "strike": 140.0,
+    "expiration": null,
+    "premium": 90.0,
+    "action": "SELL_TO_OPEN",
+    "status": "UNKNOWN"
+  }
+]
