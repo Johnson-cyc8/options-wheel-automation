@@ -26,7 +26,7 @@ def main():
     client = BrokerClient(api_key=ALPACA_API_KEY, secret_key=ALPACA_SECRET_KEY, paper=IS_PAPER)
 
     # Fetch your actual cash balance (not margin buying power)
-    account = client.get_account()
+    account = client.trade_client.get_account()
     cash_balance = float(account.cash)
     logger.info(f"[Current cash balance is ${cash_balance}]")
 
