@@ -19,12 +19,11 @@ def sell_puts(client, allowed_symbols, buying_power, strat_logger=None):
     if strat_logger:
         strat_logger.set_filtered_symbols(filtered_symbols)
 
-    if len(filtered_symbols) == 0:
+    if not filtered_symbols:
         logger.info("No symbols found with sufficient buying power.")
         return
 
-    # Prepare to collect trade logs
-    trades = []
+    trades = []  # collect trade logs
 
     # Fetch and filter put options
     option_contracts = client.get_options_contracts(filtered_symbols, 'put')
@@ -40,23 +39,23 @@ def sell_puts(client, allowed_symbols, buying_power, strat_logger=None):
     if put_options:
         logger.info("Scoring put options...")
         scores = score_options(put_options)
-        put_options = select_options(put_options, scores)
+        selected = select_options(put_options, scores)
 
-        # Execute sells and log each
-        for p in put_options:
-            if buying_power < 100 * p.strike:
+        for p in selected:
+            cost = 100 * p.strike
+            if buying_power < cost:
                 break
-            buying_power -= 100 * p.strike
+            buying_power -= cost
             logger.info(f"Selling put: {p.symbol}")
             order = client.market_sell(p.symbol)
 
-            # Build trade record
+            # Build trade record using expiration_date attribute
             trade = {
                 "timestamp": datetime.utcnow().isoformat() + "Z",
-                "ticker": p.underlying,
+                "ticker": p.underlying,  # underlying_symbol from Contract
                 "type": "PUT",
                 "strike": p.strike,
-                "expiration": p.expiration.strftime("%Y-%m-%d"),
+                "expiration": getattr(p, 'expiration_date', None),
                 "premium": p.bid_price * 100,
                 "action": "SELL_TO_OPEN",
                 "status": getattr(order, 'status', 'UNKNOWN')
@@ -65,11 +64,9 @@ def sell_puts(client, allowed_symbols, buying_power, strat_logger=None):
 
             if strat_logger:
                 strat_logger.log_sold_puts([p.to_dict()])
-
     else:
-        logger.info("No put options found with sufficient delta and open interest.")
+        logger.info("No put options found with sufficient criteria.")
 
-    # Save all put trade logs for this run
     if trades:
         log_trades(trades)
 
@@ -79,16 +76,16 @@ def sell_calls(client, symbol, purchase_price, stock_qty, strat_logger=None):
     Select and sell covered calls.
     """
     if stock_qty < 100:
-        msg = f"Not enough shares of {symbol} to cover short calls! Only {stock_qty} shares are held and at least 100 are needed!"
+        msg = (
+            f"Not enough shares of {symbol} to cover short calls! "
+            f"Only {stock_qty} shares held (need at least 100)."
+        )
         logger.error(msg)
         raise ValueError(msg)
 
     logger.info(f"Searching for call options on {symbol}...")
+    trades = []  # collect trade logs
 
-    # Prepare to collect trade logs
-    trades = []
-
-    # Fetch and filter call options
     call_options = filter_options([
         Contract.from_contract(option, client)
         for option in client.get_options_contracts([symbol], 'call')
@@ -102,13 +99,12 @@ def sell_calls(client, symbol, purchase_price, stock_qty, strat_logger=None):
         logger.info(f"Selling call option: {contract.symbol}")
         order = client.market_sell(contract.symbol)
 
-        # Build trade record
         trade = {
             "timestamp": datetime.utcnow().isoformat() + "Z",
             "ticker": contract.underlying,
             "type": "CALL",
             "strike": contract.strike,
-            "expiration": contract.expiration.strftime("%Y-%m-%d"),
+            "expiration": getattr(contract, 'expiration_date', None),
             "premium": contract.bid_price * 100,
             "action": "SELL_TO_OPEN",
             "status": getattr(order, 'status', 'UNKNOWN')
@@ -117,10 +113,8 @@ def sell_calls(client, symbol, purchase_price, stock_qty, strat_logger=None):
 
         if strat_logger:
             strat_logger.log_sold_calls(contract.to_dict())
-
     else:
-        logger.info(f"No viable call options found for {symbol}")
+        logger.info(f"No viable call options found for {symbol}.")
 
-    # Save all call trade logs for this run
     if trades:
         log_trades(trades)
