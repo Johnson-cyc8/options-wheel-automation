@@ -13,54 +13,43 @@ on:
 jobs:
   wheel:
     runs-on: ubuntu-latest
-
-    env:
-      ALPACA_API_KEY:   ${{ secrets.ALPACA_API_KEY }}
-      ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
-      IS_PAPER: true
-      GOOGLE_SCRIPT_URL: ${{ secrets.GOOGLE_SCRIPT_URL }}
+    # … your env, setup steps …
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
-      - name: Set up Python 3.10
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      - name: Cache pip
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/pyproject.toml','**/setup.py') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Install dependencies
-        run: pip install -e .
+      - name: Record last log filename
+        id: before
+        run: |
+          mkdir -p logs
+          last=$(ls -t logs/trades_*.json 2>/dev/null | head -n1 || echo "")
+          echo "before=$last" >> $GITHUB_OUTPUT
 
       - name: Run strategy
-        run: run-strategy --strat-log --log-level INFO # --fresh-start
+        run: run-strategy --strat-log --log-level INFO --fresh-start
+
+      - name: Record new log filename
+        id: after
+        run: |
+          last=$(ls -t logs/trades_*.json 2>/dev/null | head -n1 || echo "")
+          echo "after=$last" >> $GITHUB_OUTPUT
 
       - name: Send trades to Google Sheets
-        if: env.GOOGLE_SCRIPT_URL != ''
+        if: steps.after.outputs.after != steps.before.outputs.before
         run: |
-          latest=$(ls -t logs/trades_*.json | head -n1)
-          [ -f "$latest" ] && \
+          file="${{ steps.after.outputs.after }}"
           curl -X POST -H "Content-Type: application/json" \
-               --data-binary "@$latest" \
-               "$GOOGLE_SCRIPT_URL" || \
-          echo "No trades file found."
+               --data-binary "@$file" \
+               "$GOOGLE_SCRIPT_URL"
 
       - name: Commit JSON logs
+        if: steps.after.outputs.after != steps.before.outputs.before
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add logs/*.json || true
+          git add logs/*.json
           if ! git diff --cached --quiet; then
-            git commit -m "chore: add trade logs"
+            git commit -m "chore: add new trade log"
             git push
           fi
