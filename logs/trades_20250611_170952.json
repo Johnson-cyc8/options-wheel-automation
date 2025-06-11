@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2025-06-11T17:09:52.064273Z",
+    "ticker": "NVDA",
+    "type": "PUT",
+    "strike": 140.0,
+    "expiration": "2025-06-20",
+    "premium": 147.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-06-11T17:09:52.091020Z",
+    "ticker": "AAL",
+    "type": "PUT",
+    "strike": 10.5,
+    "expiration": "2025-06-20",
+    "premium": 7.000000000000001,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
