@@ -50,7 +50,7 @@ jobs:
           echo "before=$last" >> $GITHUB_OUTPUT
 
       - name: Run strategy
-        run: run-strategy --strat-log --log-level INFO --fresh-start
+        run: run-strategy --strat-log --log-level INFO #--fresh-start
 
       - name: Record new log filename
         id: after
