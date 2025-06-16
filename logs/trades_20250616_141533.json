@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2025-06-16T14:15:33.788288Z",
+    "ticker": "INTC",
+    "type": "CALL",
+    "strike": 22.0,
+    "expiration": "2025-07-03",
+    "premium": 33.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]

@@ -4821,5 +4821,190 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2025-06-16T10:15:30.978364-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_option",
+        "symbol": "AAL250620P00010500",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.05",
+        "current_price": "0.11",
+        "pnl": "-6"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "INTC",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "20.35",
+        "current_price": "20.685",
+        "pnl": "33.5"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "MP250620P00023000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.5",
+        "current_price": "0.05",
+        "pnl": "45"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "NVDA250620P00140000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "1.49",
+        "current_price": "0.59",
+        "pnl": "90"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "PLTR250620P00129000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "2.08",
+        "current_price": "0.33",
+        "pnl": "175"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "short_put",
+        "price": null
+      },
+      "INTC": {
+        "type": "long_shares",
+        "price": 20.35,
+        "qty": 100
+      },
+      "MP": {
+        "type": "short_put",
+        "price": null
+      },
+      "NVDA": {
+        "type": "short_put",
+        "price": null
+      },
+      "PLTR": {
+        "type": "short_put",
+        "price": null
+      }
+    },
+    "call_options": [
+      {
+        "underlying": "INTC",
+        "symbol": "INTC250620C00021500",
+        "contract_type": "call",
+        "expiration_date": "2025-06-20",
+        "dte": 4,
+        "strike": 21.5,
+        "delta": 0.2222,
+        "bid_price": 0.1,
+        "ask_price": 0.15,
+        "last_price": 0.14,
+        "oi": 13387.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC250627C00022000",
+        "contract_type": "call",
+        "expiration_date": "2025-06-27",
+        "dte": 11,
+        "strike": 22.0,
+        "delta": 0.2181,
+        "bid_price": 0.18,
+        "ask_price": 0.19,
+        "last_price": 0.19,
+        "oi": 7131.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC250627C00022500",
+        "contract_type": "call",
+        "expiration_date": "2025-06-27",
+        "dte": 11,
+        "strike": 22.5,
+        "delta": 0.1782,
+        "bid_price": 0.16,
+        "ask_price": 0.17,
+        "last_price": 0.16,
+        "oi": 2933.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC250703C00022000",
+        "contract_type": "call",
+        "expiration_date": "2025-07-03",
+        "dte": 17,
+        "strike": 22.0,
+        "delta": 0.2852,
+        "bid_price": 0.33,
+        "ask_price": 0.35,
+        "last_price": 0.33,
+        "oi": 3920.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC250703C00022500",
+        "contract_type": "call",
+        "expiration_date": "2025-07-03",
+        "dte": 17,
+        "strike": 22.5,
+        "delta": 0.2203,
+        "bid_price": 0.24,
+        "ask_price": 0.26,
+        "last_price": 0.21,
+        "oi": 1103.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC250703C00023000",
+        "contract_type": "call",
+        "expiration_date": "2025-07-03",
+        "dte": 17,
+        "strike": 23.0,
+        "delta": 0.1695,
+        "bid_price": 0.18,
+        "ask_price": 0.19,
+        "last_price": 0.17,
+        "oi": 2365.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_calls": [
+      {
+        "underlying": "INTC",
+        "symbol": "INTC250703C00022000",
+        "contract_type": "call",
+        "expiration_date": "2025-07-03",
+        "dte": 17,
+        "strike": 22.0,
+        "delta": 0.2852,
+        "bid_price": 0.33,
+        "ask_price": 0.35,
+        "last_price": 0.33,
+        "oi": 3920.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": 1091.7099999999991,
+    "allowed_symbols": [
+      "CAT",
+      "DLR",
+      "V",
+      "AAPL",
+      "QQQ"
+    ],
+    "filtered_symbols": []
   }
 ]
