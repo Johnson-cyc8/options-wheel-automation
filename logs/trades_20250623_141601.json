@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "2025-06-23T14:16:01.175008Z",
+    "ticker": "MP",
+    "type": "PUT",
+    "strike": 34.5,
+    "expiration": "2025-07-03",
+    "premium": 83.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-06-23T14:16:01.301429Z",
+    "ticker": "PLTR",
+    "type": "PUT",
+    "strike": 135.0,
+    "expiration": "2025-06-27",
+    "premium": 141.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-06-23T14:16:01.326445Z",
+    "ticker": "AAL",
+    "type": "PUT",
+    "strike": 10.0,
+    "expiration": "2025-07-03",
+    "premium": 15.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
