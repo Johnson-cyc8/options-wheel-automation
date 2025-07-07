@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2025-07-07T14:15:42.196032Z",
+    "ticker": "MP",
+    "type": "CALL",
+    "strike": 34.5,
+    "expiration": "2025-07-18",
+    "premium": 52.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
