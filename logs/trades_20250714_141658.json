@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2025-07-14T14:16:58.460142Z",
+    "ticker": "INTC",
+    "type": "PUT",
+    "strike": 21.5,
+    "expiration": "2025-07-25",
+    "premium": 43.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-07-14T14:16:58.523070Z",
+    "ticker": "PLTR",
+    "type": "PUT",
+    "strike": 140.0,
+    "expiration": "2025-07-18",
+    "premium": 138.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
