@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2025-07-21T14:18:05.984209Z",
+    "ticker": "MP",
+    "type": "PUT",
+    "strike": 60.0,
+    "expiration": "2025-07-25",
+    "premium": 82.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-07-21T14:18:06.000076Z",
+    "ticker": "PLTR",
+    "type": "PUT",
+    "strike": 143.0,
+    "expiration": "2025-08-08",
+    "premium": 517.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
