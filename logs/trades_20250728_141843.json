@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2025-07-28T14:18:43.349227Z",
+    "ticker": "MP",
+    "type": "PUT",
+    "strike": 60.0,
+    "expiration": "2025-08-01",
+    "premium": 78.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-07-28T14:18:43.412535Z",
+    "ticker": "AAL",
+    "type": "PUT",
+    "strike": 11.0,
+    "expiration": "2025-08-15",
+    "premium": 17.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
