@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2025-08-04T14:20:46.323068Z",
+    "ticker": "MP",
+    "type": "PUT",
+    "strike": 60.0,
+    "expiration": "2025-08-15",
+    "premium": 153.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]

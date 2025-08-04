@@ -8206,5 +8206,330 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2025-08-04T10:20:43.513738-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_option",
+        "symbol": "AAL250815P00011000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.15",
+        "current_price": "0.22",
+        "pnl": "-7"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "INTC",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "21.05",
+        "current_price": "19.435",
+        "pnl": "-161.5"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "PLTR250808P00143000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "5.15",
+        "current_price": "2.72",
+        "pnl": "243"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "short_put",
+        "price": null
+      },
+      "INTC": {
+        "type": "long_shares",
+        "price": 21.05,
+        "qty": 100
+      },
+      "PLTR": {
+        "type": "short_put",
+        "price": null
+      }
+    },
+    "call_options": [
+      {
+        "underlying": "INTC",
+        "symbol": "INTC250822C00021500",
+        "contract_type": "call",
+        "expiration_date": "2025-08-22",
+        "dte": 18,
+        "strike": 21.5,
+        "delta": 0.1749,
+        "bid_price": 0.17,
+        "ask_price": 0.18,
+        "last_price": 0.17,
+        "oi": 650.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_calls": [
+      {
+        "underlying": "INTC",
+        "symbol": "INTC250822C00021500",
+        "contract_type": "call",
+        "expiration_date": "2025-08-22",
+        "dte": 18,
+        "strike": 21.5,
+        "delta": 0.1749,
+        "bid_price": 0.17,
+        "ask_price": 0.18,
+        "last_price": 0.17,
+        "oi": 650.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": 17902.769999999997,
+    "allowed_symbols": [
+      "QQQ",
+      "NVDA",
+      "AAPL",
+      "CAT",
+      "MP",
+      "V",
+      "DLR"
+    ],
+    "filtered_symbols": [
+      "NVDA",
+      "DLR",
+      "MP"
+    ],
+    "put_options": [
+      {
+        "underlying": "DLR",
+        "symbol": "DLR250815P00165000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-15",
+        "dte": 11,
+        "strike": 165.0,
+        "delta": -0.1708,
+        "bid_price": 0.67,
+        "ask_price": 0.87,
+        "last_price": 0.65,
+        "oi": 477.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP250808P00059000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-08",
+        "dte": 4,
+        "strike": 59.0,
+        "delta": -0.1843,
+        "bid_price": 0.72,
+        "ask_price": 0.78,
+        "last_price": 0.78,
+        "oi": 169.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP250815P00057000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-15",
+        "dte": 11,
+        "strike": 57.0,
+        "delta": -0.1623,
+        "bid_price": 0.73,
+        "ask_price": 0.92,
+        "last_price": 0.83,
+        "oi": 200.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP250815P00058000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-15",
+        "dte": 11,
+        "strike": 58.0,
+        "delta": -0.1954,
+        "bid_price": 1.02,
+        "ask_price": 1.08,
+        "last_price": 1.31,
+        "oi": 169.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP250815P00059000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-15",
+        "dte": 11,
+        "strike": 59.0,
+        "delta": -0.2308,
+        "bid_price": 1.23,
+        "ask_price": 1.38,
+        "last_price": 1.65,
+        "oi": 157.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP250815P00060000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-15",
+        "dte": 11,
+        "strike": 60.0,
+        "delta": -0.2702,
+        "bid_price": 1.53,
+        "ask_price": 1.72,
+        "last_price": 1.73,
+        "oi": 1432.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP250822P00056000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-22",
+        "dte": 18,
+        "strike": 56.0,
+        "delta": -0.1609,
+        "bid_price": 0.88,
+        "ask_price": 1.02,
+        "last_price": 1.03,
+        "oi": 120.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP250822P00058000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-22",
+        "dte": 18,
+        "strike": 58.0,
+        "delta": -0.2259,
+        "bid_price": 1.47,
+        "ask_price": 1.58,
+        "last_price": 1.72,
+        "oi": 101.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP250822P00060000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-22",
+        "dte": 18,
+        "strike": 60.0,
+        "delta": -0.2944,
+        "bid_price": 2.13,
+        "ask_price": 2.33,
+        "last_price": 2.49,
+        "oi": 305.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA250808P00170000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-08",
+        "dte": 4,
+        "strike": 170.0,
+        "delta": -0.1595,
+        "bid_price": 0.71,
+        "ask_price": 0.72,
+        "last_price": 0.76,
+        "oi": 20428.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA250808P00172500",
+        "contract_type": "put",
+        "expiration_date": "2025-08-08",
+        "dte": 4,
+        "strike": 172.5,
+        "delta": -0.2388,
+        "bid_price": 1.13,
+        "ask_price": 1.18,
+        "last_price": 1.18,
+        "oi": 10765.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA250815P00167500",
+        "contract_type": "put",
+        "expiration_date": "2025-08-15",
+        "dte": 11,
+        "strike": 167.5,
+        "delta": -0.1793,
+        "bid_price": 1.23,
+        "ask_price": 1.25,
+        "last_price": 1.24,
+        "oi": 12632.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA250815P00170000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-15",
+        "dte": 11,
+        "strike": 170.0,
+        "delta": -0.2345,
+        "bid_price": 1.67,
+        "ask_price": 1.73,
+        "last_price": 1.73,
+        "oi": 28822.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA250822P00165000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-22",
+        "dte": 18,
+        "strike": 165.0,
+        "delta": -0.1794,
+        "bid_price": 1.59,
+        "ask_price": 1.6,
+        "last_price": 1.59,
+        "oi": 7108.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA250822P00170000",
+        "contract_type": "put",
+        "expiration_date": "2025-08-22",
+        "dte": 18,
+        "strike": 170.0,
+        "delta": -0.272,
+        "bid_price": 2.59,
+        "ask_price": 2.61,
+        "last_price": 2.62,
+        "oi": 8958.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_puts": [
+      [
+        {
+          "underlying": "MP",
+          "symbol": "MP250815P00060000",
+          "contract_type": "put",
+          "expiration_date": "2025-08-15",
+          "dte": 11,
+          "strike": 60.0,
+          "delta": -0.2702,
+          "bid_price": 1.53,
+          "ask_price": 1.72,
+          "last_price": 1.73,
+          "oi": 1432.0,
+          "underlying_price": null
+        }
+      ]
+    ]
   }
 ]
