@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2025-08-11T14:18:02.392959Z",
+    "ticker": "PLTR",
+    "type": "PUT",
+    "strike": 180.0,
+    "expiration": "2025-08-15",
+    "premium": 158.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
