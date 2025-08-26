@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2025-08-26T17:09:20.192914Z",
+    "ticker": "PLTR",
+    "type": "CALL",
+    "strike": 180.0,
+    "expiration": "2025-09-12",
+    "premium": 164.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]

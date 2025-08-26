@@ -9246,5 +9246,98 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2025-08-26T13:09:13.886157-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_option",
+        "symbol": "AAL250912P00012000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.16",
+        "current_price": "0.18",
+        "pnl": "-2"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "178.39",
+        "current_price": "160.82",
+        "pnl": "-1757"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "short_put",
+        "price": null
+      },
+      "PLTR": {
+        "type": "long_shares",
+        "price": 178.39,
+        "qty": 100
+      }
+    },
+    "call_options": [
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR250912C00180000",
+        "contract_type": "call",
+        "expiration_date": "2025-09-12",
+        "dte": 17,
+        "strike": 180.0,
+        "delta": 0.1769,
+        "bid_price": 1.64,
+        "ask_price": 1.65,
+        "last_price": 1.71,
+        "oi": 1535.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR250912C00182500",
+        "contract_type": "call",
+        "expiration_date": "2025-09-12",
+        "dte": 17,
+        "strike": 182.5,
+        "delta": 0.1513,
+        "bid_price": 1.35,
+        "ask_price": 1.4,
+        "last_price": 1.44,
+        "oi": 607.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_calls": [
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR250912C00180000",
+        "contract_type": "call",
+        "expiration_date": "2025-09-12",
+        "dte": 17,
+        "strike": 180.0,
+        "delta": 0.1769,
+        "bid_price": 1.64,
+        "ask_price": 1.65,
+        "last_price": 1.71,
+        "oi": 1535.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": 1007.4300000000003,
+    "allowed_symbols": [
+      "INTC",
+      "NVDA",
+      "CAT",
+      "MP",
+      "V",
+      "QQQ",
+      "DLR",
+      "AAPL"
+    ],
+    "filtered_symbols": []
   }
 ]
