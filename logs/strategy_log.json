@@ -9853,5 +9853,276 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2025-10-06T10:14:58.139703-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "178.39",
+        "current_price": "180.38",
+        "pnl": "199"
+      }
+    ],
+    "state_dict": {
+      "PLTR": {
+        "type": "long_shares",
+        "price": 178.39,
+        "qty": 100
+      }
+    },
+    "call_options": [
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251010C00187500",
+        "contract_type": "call",
+        "expiration_date": "2025-10-10",
+        "dte": 4,
+        "strike": 187.5,
+        "delta": 0.2912,
+        "bid_price": 2.05,
+        "ask_price": 2.09,
+        "last_price": 2.07,
+        "oi": 3942.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251010C00190000",
+        "contract_type": "call",
+        "expiration_date": "2025-10-10",
+        "dte": 4,
+        "strike": 190.0,
+        "delta": 0.2267,
+        "bid_price": 1.48,
+        "ask_price": 1.51,
+        "last_price": 1.45,
+        "oi": 18362.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251010C00192500",
+        "contract_type": "call",
+        "expiration_date": "2025-10-10",
+        "dte": 4,
+        "strike": 192.5,
+        "delta": 0.1723,
+        "bid_price": 1.05,
+        "ask_price": 1.07,
+        "last_price": 1.0,
+        "oi": 32095.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251017C00192500",
+        "contract_type": "call",
+        "expiration_date": "2025-10-17",
+        "dte": 11,
+        "strike": 192.5,
+        "delta": 0.2717,
+        "bid_price": 2.68,
+        "ask_price": 2.79,
+        "last_price": 2.76,
+        "oi": 1190.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251017C00195000",
+        "contract_type": "call",
+        "expiration_date": "2025-10-17",
+        "dte": 11,
+        "strike": 195.0,
+        "delta": 0.2307,
+        "bid_price": 2.22,
+        "ask_price": 2.23,
+        "last_price": 2.28,
+        "oi": 6857.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251017C00197500",
+        "contract_type": "call",
+        "expiration_date": "2025-10-17",
+        "dte": 11,
+        "strike": 197.5,
+        "delta": 0.1922,
+        "bid_price": 1.71,
+        "ask_price": 1.81,
+        "last_price": 1.78,
+        "oi": 801.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251017C00200000",
+        "contract_type": "call",
+        "expiration_date": "2025-10-17",
+        "dte": 11,
+        "strike": 200.0,
+        "delta": 0.1614,
+        "bid_price": 1.42,
+        "ask_price": 1.44,
+        "last_price": 1.44,
+        "oi": 16799.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251024C00195000",
+        "contract_type": "call",
+        "expiration_date": "2025-10-24",
+        "dte": 18,
+        "strike": 195.0,
+        "delta": 0.2856,
+        "bid_price": 3.55,
+        "ask_price": 3.68,
+        "last_price": 3.77,
+        "oi": 2018.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251024C00197500",
+        "contract_type": "call",
+        "expiration_date": "2025-10-24",
+        "dte": 18,
+        "strike": 197.5,
+        "delta": 0.2534,
+        "bid_price": 3.05,
+        "ask_price": 3.2,
+        "last_price": 3.03,
+        "oi": 197.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251024C00200000",
+        "contract_type": "call",
+        "expiration_date": "2025-10-24",
+        "dte": 18,
+        "strike": 200.0,
+        "delta": 0.2204,
+        "bid_price": 2.51,
+        "ask_price": 2.69,
+        "last_price": 2.55,
+        "oi": 3012.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251024C00205000",
+        "contract_type": "call",
+        "expiration_date": "2025-10-24",
+        "dte": 18,
+        "strike": 205.0,
+        "delta": 0.1685,
+        "bid_price": 1.83,
+        "ask_price": 1.92,
+        "last_price": 1.87,
+        "oi": 888.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_calls": [
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251010C00187500",
+        "contract_type": "call",
+        "expiration_date": "2025-10-10",
+        "dte": 4,
+        "strike": 187.5,
+        "delta": 0.2912,
+        "bid_price": 2.05,
+        "ask_price": 2.09,
+        "last_price": 2.07,
+        "oi": 3942.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": 2769.119999999999,
+    "allowed_symbols": [
+      "AAPL",
+      "INTC",
+      "AAL",
+      "V",
+      "NVDA",
+      "DLR",
+      "CAT",
+      "QQQ",
+      "MP"
+    ],
+    "filtered_symbols": [
+      "AAL"
+    ],
+    "put_options": [
+      {
+        "underlying": "AAL",
+        "symbol": "AAL251010P00011000",
+        "contract_type": "put",
+        "expiration_date": "2025-10-10",
+        "dte": 4,
+        "strike": 11.0,
+        "delta": -0.2431,
+        "bid_price": 0.12,
+        "ask_price": 0.13,
+        "last_price": 0.12,
+        "oi": 6314.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL251017P00011000",
+        "contract_type": "put",
+        "expiration_date": "2025-10-17",
+        "dte": 11,
+        "strike": 11.0,
+        "delta": -0.2908,
+        "bid_price": 0.21,
+        "ask_price": 0.22,
+        "last_price": 0.22,
+        "oi": 24972.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL251024P00010500",
+        "contract_type": "put",
+        "expiration_date": "2025-10-24",
+        "dte": 18,
+        "strike": 10.5,
+        "delta": -0.2126,
+        "bid_price": 0.19,
+        "ask_price": 0.2,
+        "last_price": 0.23,
+        "oi": 1924.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_puts": [
+      [
+        {
+          "underlying": "AAL",
+          "symbol": "AAL251010P00011000",
+          "contract_type": "put",
+          "expiration_date": "2025-10-10",
+          "dte": 4,
+          "strike": 11.0,
+          "delta": -0.2431,
+          "bid_price": 0.12,
+          "ask_price": 0.13,
+          "last_price": 0.12,
+          "oi": 6314.0,
+          "underlying_price": null
+        }
+      ]
+    ]
   }
 ]
