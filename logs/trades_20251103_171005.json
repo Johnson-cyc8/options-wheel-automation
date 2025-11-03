@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2025-11-03T17:10:05.650871Z",
+    "ticker": "AAL",
+    "type": "PUT",
+    "strike": 13.0,
+    "expiration": "2025-11-07",
+    "premium": 15.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
