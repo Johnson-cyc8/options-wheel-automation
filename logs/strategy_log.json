@@ -11522,5 +11522,254 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2025-12-08T12:12:44.616713-05:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "178.39",
+        "current_price": "180.96",
+        "pnl": "257"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "PLTR251212C00180000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "2.41",
+        "current_price": "4.7",
+        "pnl": "-229"
+      }
+    ],
+    "state_dict": {
+      "PLTR": {
+        "type": "short_call",
+        "price": 178.39,
+        "qty": 100
+      }
+    },
+    "buying_power": 4474.380000000001,
+    "allowed_symbols": [
+      "AAL",
+      "AAPL",
+      "INTC",
+      "MP",
+      "QQQ",
+      "NVDA",
+      "V",
+      "DLR",
+      "CAT"
+    ],
+    "filtered_symbols": [
+      "INTC",
+      "AAL"
+    ],
+    "put_options": [
+      {
+        "underlying": "AAL",
+        "symbol": "AAL251212P00014000",
+        "contract_type": "put",
+        "expiration_date": "2025-12-12",
+        "dte": 4,
+        "strike": 14.0,
+        "delta": -0.1654,
+        "bid_price": 0.05,
+        "ask_price": 0.1,
+        "last_price": 0.08,
+        "oi": 4787.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL251219P00014000",
+        "contract_type": "put",
+        "expiration_date": "2025-12-19",
+        "dte": 11,
+        "strike": 14.0,
+        "delta": -0.2339,
+        "bid_price": 0.16,
+        "ask_price": 0.17,
+        "last_price": 0.2,
+        "oi": 12985.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL251226P00013500",
+        "contract_type": "put",
+        "expiration_date": "2025-12-26",
+        "dte": 18,
+        "strike": 13.5,
+        "delta": -0.1746,
+        "bid_price": 0.14,
+        "ask_price": 0.16,
+        "last_price": 0.14,
+        "oi": 211.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL251226P00014000",
+        "contract_type": "put",
+        "expiration_date": "2025-12-26",
+        "dte": 18,
+        "strike": 14.0,
+        "delta": -0.2739,
+        "bid_price": 0.24,
+        "ask_price": 0.28,
+        "last_price": 0.24,
+        "oi": 468.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC251212P00038000",
+        "contract_type": "put",
+        "expiration_date": "2025-12-12",
+        "dte": 4,
+        "strike": 38.0,
+        "delta": -0.1923,
+        "bid_price": 0.25,
+        "ask_price": 0.31,
+        "last_price": 0.3,
+        "oi": 4142.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC251212P00038500",
+        "contract_type": "put",
+        "expiration_date": "2025-12-12",
+        "dte": 4,
+        "strike": 38.5,
+        "delta": -0.2456,
+        "bid_price": 0.36,
+        "ask_price": 0.38,
+        "last_price": 0.42,
+        "oi": 3666.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC251219P00036500",
+        "contract_type": "put",
+        "expiration_date": "2025-12-19",
+        "dte": 11,
+        "strike": 36.5,
+        "delta": -0.1636,
+        "bid_price": 0.35,
+        "ask_price": 0.39,
+        "last_price": 0.35,
+        "oi": 1937.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC251219P00037000",
+        "contract_type": "put",
+        "expiration_date": "2025-12-19",
+        "dte": 11,
+        "strike": 37.0,
+        "delta": -0.1842,
+        "bid_price": 0.39,
+        "ask_price": 0.41,
+        "last_price": 0.45,
+        "oi": 24693.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC251219P00037500",
+        "contract_type": "put",
+        "expiration_date": "2025-12-19",
+        "dte": 11,
+        "strike": 37.5,
+        "delta": -0.2232,
+        "bid_price": 0.5,
+        "ask_price": 0.52,
+        "last_price": 0.56,
+        "oi": 767.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC251219P00038000",
+        "contract_type": "put",
+        "expiration_date": "2025-12-19",
+        "dte": 11,
+        "strike": 38.0,
+        "delta": -0.2723,
+        "bid_price": 0.67,
+        "ask_price": 0.7,
+        "last_price": 0.7,
+        "oi": 7058.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC251226P00036000",
+        "contract_type": "put",
+        "expiration_date": "2025-12-26",
+        "dte": 18,
+        "strike": 36.0,
+        "delta": -0.163,
+        "bid_price": 0.42,
+        "ask_price": 0.44,
+        "last_price": 0.44,
+        "oi": 607.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC251226P00037000",
+        "contract_type": "put",
+        "expiration_date": "2025-12-26",
+        "dte": 18,
+        "strike": 37.0,
+        "delta": -0.2215,
+        "bid_price": 0.61,
+        "ask_price": 0.63,
+        "last_price": 0.65,
+        "oi": 1285.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC251226P00038000",
+        "contract_type": "put",
+        "expiration_date": "2025-12-26",
+        "dte": 18,
+        "strike": 38.0,
+        "delta": -0.2921,
+        "bid_price": 0.86,
+        "ask_price": 0.88,
+        "last_price": 0.9,
+        "oi": 1454.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_puts": [
+      [
+        {
+          "underlying": "INTC",
+          "symbol": "INTC251219P00038000",
+          "contract_type": "put",
+          "expiration_date": "2025-12-19",
+          "dte": 11,
+          "strike": 38.0,
+          "delta": -0.2723,
+          "bid_price": 0.67,
+          "ask_price": 0.7,
+          "last_price": 0.7,
+          "oi": 7058.0,
+          "underlying_price": null
+        }
+      ]
+    ]
   }
 ]

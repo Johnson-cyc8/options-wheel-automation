@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2025-12-08T17:12:46.086595Z",
+    "ticker": "INTC",
+    "type": "PUT",
+    "strike": 38.0,
+    "expiration": "2025-12-19",
+    "premium": 67.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
