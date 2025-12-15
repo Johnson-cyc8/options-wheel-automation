@@ -12325,5 +12325,141 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2025-12-15T14:39:34.840761-05:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_option",
+        "symbol": "INTC251219P00038000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.65",
+        "current_price": "1.05",
+        "pnl": "-40"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "MP251226P00052000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "1.1",
+        "current_price": "1.5",
+        "pnl": "-40"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "PLTR251219P00177500",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "1.54",
+        "current_price": "1.18",
+        "pnl": "36"
+      }
+    ],
+    "state_dict": {
+      "INTC": {
+        "type": "short_put",
+        "price": null
+      },
+      "MP": {
+        "type": "short_put",
+        "price": null
+      },
+      "PLTR": {
+        "type": "short_put",
+        "price": null
+      }
+    },
+    "buying_power": 13892.269999999997,
+    "allowed_symbols": [
+      "NVDA",
+      "DLR",
+      "AAPL",
+      "AAL",
+      "QQQ",
+      "V",
+      "CAT"
+    ],
+    "filtered_symbols": [
+      "AAL"
+    ],
+    "put_options": [
+      {
+        "underlying": "AAL",
+        "symbol": "AAL251219P00014500",
+        "contract_type": "put",
+        "expiration_date": "2025-12-19",
+        "dte": 4,
+        "strike": 14.5,
+        "delta": -0.2029,
+        "bid_price": 0.07,
+        "ask_price": 0.12,
+        "last_price": 0.1,
+        "oi": 6511.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL251226P00014500",
+        "contract_type": "put",
+        "expiration_date": "2025-12-26",
+        "dte": 11,
+        "strike": 14.5,
+        "delta": -0.2632,
+        "bid_price": 0.17,
+        "ask_price": 0.2,
+        "last_price": 0.16,
+        "oi": 1935.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL260102P00014000",
+        "contract_type": "put",
+        "expiration_date": "2026-01-02",
+        "dte": 18,
+        "strike": 14.0,
+        "delta": -0.1876,
+        "bid_price": 0.14,
+        "ask_price": 0.17,
+        "last_price": 0.13,
+        "oi": 2239.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL260102P00014500",
+        "contract_type": "put",
+        "expiration_date": "2026-01-02",
+        "dte": 18,
+        "strike": 14.5,
+        "delta": -0.2871,
+        "bid_price": 0.21,
+        "ask_price": 0.28,
+        "last_price": 0.27,
+        "oi": 291.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_puts": [
+      [
+        {
+          "underlying": "AAL",
+          "symbol": "AAL251226P00014500",
+          "contract_type": "put",
+          "expiration_date": "2025-12-26",
+          "dte": 11,
+          "strike": 14.5,
+          "delta": -0.2632,
+          "bid_price": 0.17,
+          "ask_price": 0.2,
+          "last_price": 0.16,
+          "oi": 1935.0,
+          "underlying_price": null
+        }
+      ]
+    ]
   }
 ]
