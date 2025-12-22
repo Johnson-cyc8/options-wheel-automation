@@ -12461,5 +12461,400 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2025-12-22T12:10:53.616368-05:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_option",
+        "symbol": "AAL251226P00014500",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.15",
+        "current_price": "0.02",
+        "pnl": "13"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "INTC",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "37.35",
+        "current_price": "36.535",
+        "pnl": "-81.5"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "MP251226P00052000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "1.1",
+        "current_price": "0.3",
+        "pnl": "80"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "short_put",
+        "price": null
+      },
+      "INTC": {
+        "type": "long_shares",
+        "price": 37.35,
+        "qty": 100
+      },
+      "MP": {
+        "type": "short_put",
+        "price": null
+      }
+    },
+    "call_options": [
+      {
+        "underlying": "INTC",
+        "symbol": "INTC251226C00038000",
+        "contract_type": "call",
+        "expiration_date": "2025-12-26",
+        "dte": 4,
+        "strike": 38.0,
+        "delta": 0.2255,
+        "bid_price": 0.22,
+        "ask_price": 0.24,
+        "last_price": 0.24,
+        "oi": 7216.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC251226C00038500",
+        "contract_type": "call",
+        "expiration_date": "2025-12-26",
+        "dte": 4,
+        "strike": 38.5,
+        "delta": 0.1671,
+        "bid_price": 0.14,
+        "ask_price": 0.19,
+        "last_price": 0.15,
+        "oi": 989.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC260102C00038500",
+        "contract_type": "call",
+        "expiration_date": "2026-01-02",
+        "dte": 11,
+        "strike": 38.5,
+        "delta": 0.2688,
+        "bid_price": 0.43,
+        "ask_price": 0.47,
+        "last_price": 0.46,
+        "oi": 239.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC260102C00039000",
+        "contract_type": "call",
+        "expiration_date": "2026-01-02",
+        "dte": 11,
+        "strike": 39.0,
+        "delta": 0.2243,
+        "bid_price": 0.36,
+        "ask_price": 0.37,
+        "last_price": 0.38,
+        "oi": 975.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC260102C00039500",
+        "contract_type": "call",
+        "expiration_date": "2026-01-02",
+        "dte": 11,
+        "strike": 39.5,
+        "delta": 0.1829,
+        "bid_price": 0.25,
+        "ask_price": 0.32,
+        "last_price": 0.28,
+        "oi": 393.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC260102C00040000",
+        "contract_type": "call",
+        "expiration_date": "2026-01-02",
+        "dte": 11,
+        "strike": 40.0,
+        "delta": 0.1634,
+        "bid_price": 0.26,
+        "ask_price": 0.27,
+        "last_price": 0.23,
+        "oi": 4250.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC260109C00039000",
+        "contract_type": "call",
+        "expiration_date": "2026-01-09",
+        "dte": 18,
+        "strike": 39.0,
+        "delta": 0.2842,
+        "bid_price": 0.59,
+        "ask_price": 0.66,
+        "last_price": 0.67,
+        "oi": 376.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC260109C00040000",
+        "contract_type": "call",
+        "expiration_date": "2026-01-09",
+        "dte": 18,
+        "strike": 40.0,
+        "delta": 0.2108,
+        "bid_price": 0.41,
+        "ask_price": 0.45,
+        "last_price": 0.46,
+        "oi": 1384.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "INTC",
+        "symbol": "INTC260109C00041000",
+        "contract_type": "call",
+        "expiration_date": "2026-01-09",
+        "dte": 18,
+        "strike": 41.0,
+        "delta": 0.1553,
+        "bid_price": 0.27,
+        "ask_price": 0.33,
+        "last_price": 0.34,
+        "oi": 369.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_calls": [
+      {
+        "underlying": "INTC",
+        "symbol": "INTC260102C00038500",
+        "contract_type": "call",
+        "expiration_date": "2026-01-02",
+        "dte": 11,
+        "strike": 38.5,
+        "delta": 0.2688,
+        "bid_price": 0.43,
+        "ask_price": 0.47,
+        "last_price": 0.46,
+        "oi": 239.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": 26472.14,
+    "allowed_symbols": [
+      "CAT",
+      "NVDA",
+      "AAPL",
+      "QQQ",
+      "DLR",
+      "PLTR",
+      "V"
+    ],
+    "filtered_symbols": [
+      "PLTR",
+      "DLR",
+      "NVDA"
+    ],
+    "put_options": [
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA251226P00177500",
+        "contract_type": "put",
+        "expiration_date": "2025-12-26",
+        "dte": 4,
+        "strike": 177.5,
+        "delta": -0.1574,
+        "bid_price": 0.49,
+        "ask_price": 0.5,
+        "last_price": 0.49,
+        "oi": 6752.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA251226P00180000",
+        "contract_type": "put",
+        "expiration_date": "2025-12-26",
+        "dte": 4,
+        "strike": 180.0,
+        "delta": -0.2745,
+        "bid_price": 0.94,
+        "ask_price": 0.99,
+        "last_price": 0.98,
+        "oi": 13493.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA260102P00175000",
+        "contract_type": "put",
+        "expiration_date": "2026-01-02",
+        "dte": 11,
+        "strike": 175.0,
+        "delta": -0.1958,
+        "bid_price": 1.13,
+        "ask_price": 1.18,
+        "last_price": 1.16,
+        "oi": 8666.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA260102P00177500",
+        "contract_type": "put",
+        "expiration_date": "2026-01-02",
+        "dte": 11,
+        "strike": 177.5,
+        "delta": -0.2642,
+        "bid_price": 1.62,
+        "ask_price": 1.65,
+        "last_price": 1.62,
+        "oi": 2572.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA260109P00170000",
+        "contract_type": "put",
+        "expiration_date": "2026-01-09",
+        "dte": 18,
+        "strike": 170.0,
+        "delta": -0.1614,
+        "bid_price": 1.28,
+        "ask_price": 1.33,
+        "last_price": 1.32,
+        "oi": 5231.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "NVDA",
+        "symbol": "NVDA260109P00175000",
+        "contract_type": "put",
+        "expiration_date": "2026-01-09",
+        "dte": 18,
+        "strike": 175.0,
+        "delta": -0.2549,
+        "bid_price": 2.22,
+        "ask_price": 2.24,
+        "last_price": 2.21,
+        "oi": 7556.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR251226P00187500",
+        "contract_type": "put",
+        "expiration_date": "2025-12-26",
+        "dte": 4,
+        "strike": 187.5,
+        "delta": -0.2121,
+        "bid_price": 0.94,
+        "ask_price": 0.99,
+        "last_price": 1.0,
+        "oi": 1216.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260102P00180000",
+        "contract_type": "put",
+        "expiration_date": "2026-01-02",
+        "dte": 11,
+        "strike": 180.0,
+        "delta": -0.1523,
+        "bid_price": 1.16,
+        "ask_price": 1.18,
+        "last_price": 1.16,
+        "oi": 1825.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260102P00182500",
+        "contract_type": "put",
+        "expiration_date": "2026-01-02",
+        "dte": 11,
+        "strike": 182.5,
+        "delta": -0.1911,
+        "bid_price": 1.47,
+        "ask_price": 1.51,
+        "last_price": 1.56,
+        "oi": 456.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260102P00185000",
+        "contract_type": "put",
+        "expiration_date": "2026-01-02",
+        "dte": 11,
+        "strike": 185.0,
+        "delta": -0.2448,
+        "bid_price": 2.009,
+        "ask_price": 2.04,
+        "last_price": 2.07,
+        "oi": 1497.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260109P00180000",
+        "contract_type": "put",
+        "expiration_date": "2026-01-09",
+        "dte": 18,
+        "strike": 180.0,
+        "delta": -0.2117,
+        "bid_price": 2.33,
+        "ask_price": 2.46,
+        "last_price": 2.46,
+        "oi": 1195.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260109P00185000",
+        "contract_type": "put",
+        "expiration_date": "2026-01-09",
+        "dte": 18,
+        "strike": 185.0,
+        "delta": -0.2953,
+        "bid_price": 3.53,
+        "ask_price": 3.64,
+        "last_price": 3.68,
+        "oi": 930.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_puts": [
+      [
+        {
+          "underlying": "PLTR",
+          "symbol": "PLTR260109P00185000",
+          "contract_type": "put",
+          "expiration_date": "2026-01-09",
+          "dte": 18,
+          "strike": 185.0,
+          "delta": -0.2953,
+          "bid_price": 3.53,
+          "ask_price": 3.64,
+          "last_price": 3.68,
+          "oi": 930.0,
+          "underlying_price": null
+        }
+      ]
+    ]
   }
 ]
