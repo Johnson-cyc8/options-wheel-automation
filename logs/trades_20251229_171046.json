@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2025-12-29T17:10:46.639729Z",
+    "ticker": "MP",
+    "type": "PUT",
+    "strike": 49.0,
+    "expiration": "2026-01-16",
+    "premium": 127.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2025-12-29T17:10:46.655907Z",
+    "ticker": "AAL",
+    "type": "PUT",
+    "strike": 14.5,
+    "expiration": "2026-01-16",
+    "premium": 27.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
