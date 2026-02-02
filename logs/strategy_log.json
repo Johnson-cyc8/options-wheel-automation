@@ -13729,5 +13729,136 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2026-02-02T09:38:03.796029-05:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_equity",
+        "symbol": "AAL",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "13.77",
+        "current_price": "13.78",
+        "pnl": "1"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "181.45",
+        "current_price": "149.1665",
+        "pnl": "-3228.35"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "PLTR260206C00190000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "3.85",
+        "current_price": "0.31",
+        "pnl": "354"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "long_shares",
+        "price": 13.77,
+        "qty": 100
+      },
+      "PLTR": {
+        "type": "short_call",
+        "price": 181.45,
+        "qty": 100
+      }
+    },
+    "call_options": [
+      {
+        "underlying": "AAL",
+        "symbol": "AAL260206C00014500",
+        "contract_type": "call",
+        "expiration_date": "2026-02-06",
+        "dte": 4,
+        "strike": 14.5,
+        "delta": 0.1859,
+        "bid_price": 0.07,
+        "ask_price": 0.08,
+        "last_price": 0.02,
+        "oi": 1503.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL260213C00014500",
+        "contract_type": "call",
+        "expiration_date": "2026-02-13",
+        "dte": 11,
+        "strike": 14.5,
+        "delta": 0.2847,
+        "bid_price": 0.18,
+        "ask_price": 0.21,
+        "last_price": 0.11,
+        "oi": 445.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL260213C00015000",
+        "contract_type": "call",
+        "expiration_date": "2026-02-13",
+        "dte": 11,
+        "strike": 15.0,
+        "delta": 0.163,
+        "bid_price": 0.09,
+        "ask_price": 0.1,
+        "last_price": 0.06,
+        "oi": 462.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL260220C00015000",
+        "contract_type": "call",
+        "expiration_date": "2026-02-20",
+        "dte": 18,
+        "strike": 15.0,
+        "delta": 0.2178,
+        "bid_price": 0.15,
+        "ask_price": 0.18,
+        "last_price": 0.07,
+        "oi": 14665.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_calls": [
+      {
+        "underlying": "AAL",
+        "symbol": "AAL260213C00014500",
+        "contract_type": "call",
+        "expiration_date": "2026-02-13",
+        "dte": 11,
+        "strike": 14.5,
+        "delta": 0.2847,
+        "bid_price": 0.18,
+        "ask_price": 0.21,
+        "last_price": 0.11,
+        "oi": 445.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": 2423.6399999999994,
+    "allowed_symbols": [
+      "INTC",
+      "MP",
+      "AAPL",
+      "DLR",
+      "QQQ",
+      "NVDA",
+      "CAT",
+      "V"
+    ],
+    "filtered_symbols": []
   }
 ]
