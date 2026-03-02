@@ -13990,5 +13990,70 @@
       "INTC"
     ],
     "filtered_symbols": []
+  },
+  {
+    "datetime": "2026-03-02T09:39:31.361741-05:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_equity",
+        "symbol": "AAL",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "13.77",
+        "current_price": "12.335",
+        "pnl": "-143.5"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "181.45",
+        "current_price": "143.72",
+        "pnl": "-3773"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "long_shares",
+        "price": 13.77,
+        "qty": 100
+      },
+      "PLTR": {
+        "type": "long_shares",
+        "price": 181.45,
+        "qty": 100
+      }
+    },
+    "call_options": [],
+    "sold_calls": [
+      {
+        "underlying": "AAL",
+        "symbol": "AAL260320C00014000",
+        "contract_type": "call",
+        "expiration_date": "2026-03-20",
+        "dte": 18,
+        "strike": 14.0,
+        "delta": 0.2121,
+        "bid_price": 0.19,
+        "ask_price": 0.21,
+        "last_price": 0.36,
+        "oi": 19387.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": 2460.4399999999987,
+    "allowed_symbols": [
+      "INTC",
+      "MP",
+      "NVDA",
+      "QQQ",
+      "AAPL",
+      "CAT",
+      "DLR",
+      "V"
+    ],
+    "filtered_symbols": []
   }
 ]
