@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2026-04-14T15:10:22.523642Z",
+    "ticker": "AAL",
+    "type": "CALL",
+    "strike": 14.0,
+    "expiration": "2026-05-01",
+    "premium": 13.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
