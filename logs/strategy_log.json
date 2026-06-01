@@ -14250,5 +14250,94 @@
       "QQQ"
     ],
     "filtered_symbols": []
+  },
+  {
+    "datetime": "2026-06-01T15:17:07.729970-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_equity",
+        "symbol": "AAL",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "13.77",
+        "current_price": "14.365",
+        "pnl": "59.5"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "AAL260612C00016000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.27",
+        "current_price": "0.17",
+        "pnl": "10"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "181.45",
+        "current_price": "161.9",
+        "pnl": "-1955"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "short_call",
+        "price": 13.77,
+        "qty": 100
+      },
+      "PLTR": {
+        "type": "long_shares",
+        "price": 181.45,
+        "qty": 100
+      }
+    },
+    "call_options": [
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260618C00185000",
+        "contract_type": "call",
+        "expiration_date": "2026-06-18",
+        "dte": 17,
+        "strike": 185.0,
+        "delta": 0.1867,
+        "bid_price": 2.11,
+        "ask_price": 2.16,
+        "last_price": 2.12,
+        "oi": 8602.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_calls": [
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260618C00185000",
+        "contract_type": "call",
+        "expiration_date": "2026-06-18",
+        "dte": 17,
+        "strike": 185.0,
+        "delta": 0.1867,
+        "bid_price": 2.11,
+        "ask_price": 2.16,
+        "last_price": 2.12,
+        "oi": 8602.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": 2529.2000000000007,
+    "allowed_symbols": [
+      "AAPL",
+      "V",
+      "NVDA",
+      "INTC",
+      "MP",
+      "CAT",
+      "QQQ",
+      "DLR"
+    ],
+    "filtered_symbols": []
   }
 ]
