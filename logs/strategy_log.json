@@ -15160,5 +15160,103 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2026-07-23T11:51:00.390839-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_option",
+        "symbol": "MP260724P00047000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "1.12",
+        "current_price": "3.65",
+        "pnl": "-253"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "181.45",
+        "current_price": "121.41",
+        "pnl": "-6004"
+      }
+    ],
+    "state_dict": {
+      "MP": {
+        "type": "short_put",
+        "price": null
+      },
+      "PLTR": {
+        "type": "long_shares",
+        "price": 181.45,
+        "qty": 100
+      }
+    },
+    "call_options": [],
+    "buying_power": 1411.8100000000013,
+    "allowed_symbols": [
+      "V",
+      "AAPL",
+      "NVDA",
+      "DLR",
+      "CAT",
+      "INTC",
+      "QQQ",
+      "AAL"
+    ],
+    "filtered_symbols": [
+      "AAL"
+    ],
+    "put_options": [
+      {
+        "underlying": "AAL",
+        "symbol": "AAL260731P00013000",
+        "contract_type": "put",
+        "expiration_date": "2026-07-31",
+        "dte": 8,
+        "strike": 13.0,
+        "delta": -0.2863,
+        "bid_price": 0.2,
+        "ask_price": 0.22,
+        "last_price": 0.22,
+        "oi": 1439.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "AAL",
+        "symbol": "AAL260807P00012500",
+        "contract_type": "put",
+        "expiration_date": "2026-08-07",
+        "dte": 15,
+        "strike": 12.5,
+        "delta": -0.2151,
+        "bid_price": 0.18,
+        "ask_price": 0.22,
+        "last_price": 0.18,
+        "oi": 126.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_puts": [
+      [
+        {
+          "underlying": "AAL",
+          "symbol": "AAL260731P00013000",
+          "contract_type": "put",
+          "expiration_date": "2026-07-31",
+          "dte": 8,
+          "strike": 13.0,
+          "delta": -0.2863,
+          "bid_price": 0.2,
+          "ask_price": 0.22,
+          "last_price": 0.22,
+          "oi": 1439.0,
+          "underlying_price": null
+        }
+      ]
+    ]
   }
 ]
