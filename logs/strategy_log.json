@@ -15258,5 +15258,81 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2026-07-27T12:12:13.786865-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_option",
+        "symbol": "AAL260731P00013000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.18",
+        "current_price": "0.02",
+        "pnl": "16"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "MP",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "45.88",
+        "current_price": "42.49",
+        "pnl": "-339"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "181.45",
+        "current_price": "130.0626",
+        "pnl": "-5138.74"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "short_put",
+        "price": null
+      },
+      "MP": {
+        "type": "long_shares",
+        "price": 45.88,
+        "qty": 100
+      },
+      "PLTR": {
+        "type": "long_shares",
+        "price": 181.45,
+        "qty": 100
+      }
+    },
+    "call_options": [],
+    "sold_calls": [
+      {
+        "underlying": "MP",
+        "symbol": "MP260731C00046000",
+        "contract_type": "call",
+        "expiration_date": "2026-07-31",
+        "dte": 4,
+        "strike": 46.0,
+        "delta": 0.1923,
+        "bid_price": 0.33,
+        "ask_price": 0.42,
+        "last_price": 0.3,
+        "oi": 126.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": -4458.25,
+    "allowed_symbols": [
+      "INTC",
+      "NVDA",
+      "CAT",
+      "AAPL",
+      "QQQ",
+      "DLR",
+      "V"
+    ]
   }
 ]
