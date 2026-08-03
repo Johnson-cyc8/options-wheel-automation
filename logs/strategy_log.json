@@ -15334,5 +15334,69 @@
       "DLR",
       "V"
     ]
+  },
+  {
+    "datetime": "2026-08-03T12:18:05.071934-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_equity",
+        "symbol": "MP",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "45.88",
+        "current_price": "43.745",
+        "pnl": "-213.5"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "181.45",
+        "current_price": "125.375",
+        "pnl": "-5607.5"
+      }
+    ],
+    "state_dict": {
+      "MP": {
+        "type": "long_shares",
+        "price": 45.88,
+        "qty": 100
+      },
+      "PLTR": {
+        "type": "long_shares",
+        "price": 181.45,
+        "qty": 100
+      }
+    },
+    "call_options": [],
+    "sold_calls": [
+      {
+        "underlying": "MP",
+        "symbol": "MP260807C00048000",
+        "contract_type": "call",
+        "expiration_date": "2026-08-07",
+        "dte": 4,
+        "strike": 48.0,
+        "delta": 0.213,
+        "bid_price": 0.53,
+        "ask_price": 0.56,
+        "last_price": 0.55,
+        "oi": 116.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": -3127.3100000000013,
+    "allowed_symbols": [
+      "AAPL",
+      "INTC",
+      "DLR",
+      "AAL",
+      "CAT",
+      "V",
+      "QQQ",
+      "NVDA"
+    ]
   }
 ]
