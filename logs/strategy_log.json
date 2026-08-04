@@ -15398,5 +15398,93 @@
       "QQQ",
       "NVDA"
     ]
+  },
+  {
+    "datetime": "2026-08-04T12:08:51.555727-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_equity",
+        "symbol": "MP",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "45.88",
+        "current_price": "47.26",
+        "pnl": "138"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "MP260807C00048000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.51",
+        "current_price": "1.75",
+        "pnl": "-124"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "181.45",
+        "current_price": "159.8241",
+        "pnl": "-2162.59"
+      }
+    ],
+    "state_dict": {
+      "MP": {
+        "type": "short_call",
+        "price": 45.88,
+        "qty": 100
+      },
+      "PLTR": {
+        "type": "long_shares",
+        "price": 181.45,
+        "qty": 100
+      }
+    },
+    "call_options": [
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260821C00185000",
+        "contract_type": "call",
+        "expiration_date": "2026-08-21",
+        "dte": 17,
+        "strike": 185.0,
+        "delta": 0.1505,
+        "bid_price": 1.51,
+        "ask_price": 1.57,
+        "last_price": 1.41,
+        "oi": 4582.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_calls": [
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260821C00185000",
+        "contract_type": "call",
+        "expiration_date": "2026-08-21",
+        "dte": 17,
+        "strike": 185.0,
+        "delta": 0.1505,
+        "bid_price": 1.51,
+        "ask_price": 1.57,
+        "last_price": 1.41,
+        "oi": 4582.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": -3076.380000000001,
+    "allowed_symbols": [
+      "AAL",
+      "QQQ",
+      "NVDA",
+      "CAT",
+      "INTC",
+      "V",
+      "AAPL",
+      "DLR"
+    ]
   }
 ]
