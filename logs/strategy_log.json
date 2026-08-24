@@ -15771,5 +15771,182 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2026-08-24T10:35:13.992668-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_option",
+        "symbol": "AAL260828P00014500",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.27",
+        "current_price": "0.91",
+        "pnl": "-64"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "181.45",
+        "current_price": "174.84",
+        "pnl": "-661"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "short_put",
+        "price": null
+      },
+      "PLTR": {
+        "type": "long_shares",
+        "price": 181.45,
+        "qty": 100
+      }
+    },
+    "call_options": [
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260828C00182500",
+        "contract_type": "call",
+        "expiration_date": "2026-08-28",
+        "dte": 4,
+        "strike": 182.5,
+        "delta": 0.2536,
+        "bid_price": 1.49,
+        "ask_price": 1.52,
+        "last_price": 1.43,
+        "oi": 1590.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260828C00185000",
+        "contract_type": "call",
+        "expiration_date": "2026-08-28",
+        "dte": 4,
+        "strike": 185.0,
+        "delta": 0.1833,
+        "bid_price": 0.98,
+        "ask_price": 0.99,
+        "last_price": 0.88,
+        "oi": 4162.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260904C00185000",
+        "contract_type": "call",
+        "expiration_date": "2026-09-04",
+        "dte": 11,
+        "strike": 185.0,
+        "delta": 0.2816,
+        "bid_price": 2.44,
+        "ask_price": 2.53,
+        "last_price": 2.5,
+        "oi": 1229.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260904C00187500",
+        "contract_type": "call",
+        "expiration_date": "2026-09-04",
+        "dte": 11,
+        "strike": 187.5,
+        "delta": 0.2316,
+        "bid_price": 1.9,
+        "ask_price": 1.97,
+        "last_price": 1.65,
+        "oi": 200.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260904C00190000",
+        "contract_type": "call",
+        "expiration_date": "2026-09-04",
+        "dte": 11,
+        "strike": 190.0,
+        "delta": 0.1885,
+        "bid_price": 1.45,
+        "ask_price": 1.54,
+        "last_price": 1.29,
+        "oi": 2520.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260904C00192500",
+        "contract_type": "call",
+        "expiration_date": "2026-09-04",
+        "dte": 11,
+        "strike": 192.5,
+        "delta": 0.1508,
+        "bid_price": 1.06,
+        "ask_price": 1.21,
+        "last_price": 0.94,
+        "oi": 185.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260911C00190000",
+        "contract_type": "call",
+        "expiration_date": "2026-09-11",
+        "dte": 18,
+        "strike": 190.0,
+        "delta": 0.2371,
+        "bid_price": 2.32,
+        "ask_price": 2.43,
+        "last_price": 2.18,
+        "oi": 1370.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260911C00195000",
+        "contract_type": "call",
+        "expiration_date": "2026-09-11",
+        "dte": 18,
+        "strike": 195.0,
+        "delta": 0.1687,
+        "bid_price": 1.51,
+        "ask_price": 1.6,
+        "last_price": 1.39,
+        "oi": 867.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_calls": [
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR260828C00182500",
+        "contract_type": "call",
+        "expiration_date": "2026-08-28",
+        "dte": 4,
+        "strike": 182.5,
+        "delta": 0.2536,
+        "bid_price": 1.49,
+        "ask_price": 1.52,
+        "last_price": 1.43,
+        "oi": 1590.0,
+        "underlying_price": null
+      }
+    ],
+    "buying_power": 5128.43,
+    "allowed_symbols": [
+      "CAT",
+      "DLR",
+      "QQQ",
+      "V",
+      "AAPL",
+      "INTC",
+      "MP",
+      "NVDA"
+    ],
+    "filtered_symbols": []
   }
 ]
