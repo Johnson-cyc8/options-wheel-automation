@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2026-08-31T19:47:56.940669Z",
+    "ticker": "INTC",
+    "type": "PUT",
+    "strike": 87.0,
+    "expiration": "2026-09-04",
+    "premium": 103.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  },
+  {
+    "timestamp": "2026-08-31T19:47:56.955178Z",
+    "ticker": "MP",
+    "type": "PUT",
+    "strike": 52.0,
+    "expiration": "2026-09-04",
+    "premium": 54.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
