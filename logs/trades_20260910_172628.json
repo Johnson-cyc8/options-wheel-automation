@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2026-09-10T17:26:28.436116Z",
+    "ticker": "MP",
+    "type": "PUT",
+    "strike": 49.0,
+    "expiration": "2026-09-18",
+    "premium": 70.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]

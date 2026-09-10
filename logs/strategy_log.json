@@ -17430,5 +17430,163 @@
       "CAT"
     ],
     "filtered_symbols": []
+  },
+  {
+    "datetime": "2026-09-10T13:26:28.013221-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_equity",
+        "symbol": "AAL",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "14.23",
+        "current_price": "12.86",
+        "pnl": "-137"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "AAL260918C00014500",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.18",
+        "current_price": "0.05",
+        "pnl": "13"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "PLTR",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "175.96",
+        "current_price": "166.1799",
+        "pnl": "-978.01"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "PLTR260911C00177500",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "1.39",
+        "current_price": "0.09",
+        "pnl": "130"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "short_call",
+        "price": 14.23,
+        "qty": 100
+      },
+      "PLTR": {
+        "type": "short_call",
+        "price": 175.96,
+        "qty": 100
+      }
+    },
+    "buying_power": 5377.02,
+    "allowed_symbols": [
+      "INTC",
+      "DLR",
+      "CAT",
+      "NVDA",
+      "AAPL",
+      "QQQ",
+      "V",
+      "MP"
+    ],
+    "filtered_symbols": [
+      "MP"
+    ],
+    "put_options": [
+      {
+        "underlying": "MP",
+        "symbol": "MP260911P00050000",
+        "contract_type": "put",
+        "expiration_date": "2026-09-11",
+        "dte": 1,
+        "strike": 50.0,
+        "delta": -0.1766,
+        "bid_price": 0.16,
+        "ask_price": 0.26,
+        "last_price": 0.23,
+        "oi": 311.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP260918P00048000",
+        "contract_type": "put",
+        "expiration_date": "2026-09-18",
+        "dte": 8,
+        "strike": 48.0,
+        "delta": -0.1879,
+        "bid_price": 0.46,
+        "ask_price": 0.6,
+        "last_price": 0.55,
+        "oi": 193.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP260918P00049000",
+        "contract_type": "put",
+        "expiration_date": "2026-09-18",
+        "dte": 8,
+        "strike": 49.0,
+        "delta": -0.2489,
+        "bid_price": 0.7,
+        "ask_price": 0.8,
+        "last_price": 0.78,
+        "oi": 117.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP260925P00047000",
+        "contract_type": "put",
+        "expiration_date": "2026-09-25",
+        "dte": 15,
+        "strike": 47.0,
+        "delta": -0.1974,
+        "bid_price": 0.74,
+        "ask_price": 0.82,
+        "last_price": 0.82,
+        "oi": 136.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "MP",
+        "symbol": "MP260925P00048000",
+        "contract_type": "put",
+        "expiration_date": "2026-09-25",
+        "dte": 15,
+        "strike": 48.0,
+        "delta": -0.246,
+        "bid_price": 0.97,
+        "ask_price": 1.11,
+        "last_price": 1.06,
+        "oi": 165.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_puts": [
+      [
+        {
+          "underlying": "MP",
+          "symbol": "MP260918P00049000",
+          "contract_type": "put",
+          "expiration_date": "2026-09-18",
+          "dte": 8,
+          "strike": 49.0,
+          "delta": -0.2489,
+          "bid_price": 0.7,
+          "ask_price": 0.8,
+          "last_price": 0.78,
+          "oi": 117.0,
+          "underlying_price": null
+        }
+      ]
+    ]
   }
 ]
