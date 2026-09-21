@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2026-09-21T19:00:53.411394Z",
+    "ticker": "MP",
+    "type": "CALL",
+    "strike": 53.0,
+    "expiration": "2026-09-25",
+    "premium": 51.0,
+    "action": "SELL_TO_OPEN",
+    "status": "pending_new"
+  }
+]
