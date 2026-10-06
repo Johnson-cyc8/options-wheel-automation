@@ -18821,5 +18821,246 @@
         }
       ]
     ]
+  },
+  {
+    "datetime": "2026-10-06T15:16:25.532930-04:00",
+    "fresh_start": false,
+    "current_positions": [
+      {
+        "asset_class": "us_equity",
+        "symbol": "AAL",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "14.23",
+        "current_price": "12.925",
+        "pnl": "-130.5"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "AAL261009C00014500",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.21",
+        "current_price": "0.02",
+        "pnl": "19"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "INTC261009P00110000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "2.18",
+        "current_price": "0.89",
+        "pnl": "129"
+      },
+      {
+        "asset_class": "us_equity",
+        "symbol": "MP",
+        "side": "long",
+        "qty": "100",
+        "purchase_price": "48.28",
+        "current_price": "48.36",
+        "pnl": "8"
+      },
+      {
+        "asset_class": "us_option",
+        "symbol": "MP261016C00049000",
+        "side": "short",
+        "qty": "-1",
+        "purchase_price": "0.93",
+        "current_price": "1.53",
+        "pnl": "-60"
+      }
+    ],
+    "state_dict": {
+      "AAL": {
+        "type": "short_call",
+        "price": 14.23,
+        "qty": 100
+      },
+      "INTC": {
+        "type": "short_put",
+        "price": null
+      },
+      "MP": {
+        "type": "short_call",
+        "price": 48.28,
+        "qty": 100
+      }
+    },
+    "buying_power": 21884.54,
+    "allowed_symbols": [
+      "QQQ",
+      "NVDA",
+      "DLR",
+      "V",
+      "CAT",
+      "PLTR",
+      "AAPL"
+    ],
+    "filtered_symbols": [
+      "PLTR",
+      "DLR"
+    ],
+    "put_options": [
+      {
+        "underlying": "DLR",
+        "symbol": "DLR261016P00180000",
+        "contract_type": "put",
+        "expiration_date": "2026-10-16",
+        "dte": 10,
+        "strike": 180.0,
+        "delta": -0.2712,
+        "bid_price": 1.23,
+        "ask_price": 1.78,
+        "last_price": 1.72,
+        "oi": 224.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "DLR",
+        "symbol": "DLR261023P00175000",
+        "contract_type": "put",
+        "expiration_date": "2026-10-23",
+        "dte": 17,
+        "strike": 175.0,
+        "delta": -0.1883,
+        "bid_price": 0.97,
+        "ask_price": 1.67,
+        "last_price": 1.64,
+        "oi": 103.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR261009P00185000",
+        "contract_type": "put",
+        "expiration_date": "2026-10-09",
+        "dte": 3,
+        "strike": 185.0,
+        "delta": -0.1664,
+        "bid_price": 0.73,
+        "ask_price": 0.79,
+        "last_price": 0.79,
+        "oi": 5999.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR261009P00187500",
+        "contract_type": "put",
+        "expiration_date": "2026-10-09",
+        "dte": 3,
+        "strike": 187.5,
+        "delta": -0.2487,
+        "bid_price": 1.21,
+        "ask_price": 1.27,
+        "last_price": 1.24,
+        "oi": 2325.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR261016P00180000",
+        "contract_type": "put",
+        "expiration_date": "2026-10-16",
+        "dte": 10,
+        "strike": 180.0,
+        "delta": -0.1631,
+        "bid_price": 1.26,
+        "ask_price": 1.27,
+        "last_price": 1.27,
+        "oi": 5289.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR261016P00182500",
+        "contract_type": "put",
+        "expiration_date": "2026-10-16",
+        "dte": 10,
+        "strike": 182.5,
+        "delta": -0.2107,
+        "bid_price": 1.67,
+        "ask_price": 1.79,
+        "last_price": 1.77,
+        "oi": 1259.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR261016P00185000",
+        "contract_type": "put",
+        "expiration_date": "2026-10-16",
+        "dte": 10,
+        "strike": 185.0,
+        "delta": -0.266,
+        "bid_price": 2.27,
+        "ask_price": 2.36,
+        "last_price": 2.4,
+        "oi": 2953.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR261023P00177500",
+        "contract_type": "put",
+        "expiration_date": "2026-10-23",
+        "dte": 17,
+        "strike": 177.5,
+        "delta": -0.1746,
+        "bid_price": 1.73,
+        "ask_price": 1.86,
+        "last_price": 1.8,
+        "oi": 326.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR261023P00180000",
+        "contract_type": "put",
+        "expiration_date": "2026-10-23",
+        "dte": 17,
+        "strike": 180.0,
+        "delta": -0.2128,
+        "bid_price": 2.22,
+        "ask_price": 2.35,
+        "last_price": 2.31,
+        "oi": 437.0,
+        "underlying_price": null
+      },
+      {
+        "underlying": "PLTR",
+        "symbol": "PLTR261023P00182500",
+        "contract_type": "put",
+        "expiration_date": "2026-10-23",
+        "dte": 17,
+        "strike": 182.5,
+        "delta": -0.2566,
+        "bid_price": 2.87,
+        "ask_price": 2.93,
+        "last_price": 3.0,
+        "oi": 195.0,
+        "underlying_price": null
+      }
+    ],
+    "sold_puts": [
+      [
+        {
+          "underlying": "PLTR",
+          "symbol": "PLTR261009P00187500",
+          "contract_type": "put",
+          "expiration_date": "2026-10-09",
+          "dte": 3,
+          "strike": 187.5,
+          "delta": -0.2487,
+          "bid_price": 1.21,
+          "ask_price": 1.27,
+          "last_price": 1.24,
+          "oi": 2325.0,
+          "underlying_price": null
+        }
+      ]
+    ]
   }
 ]
